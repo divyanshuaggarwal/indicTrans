@@ -92,7 +92,7 @@ class Model:
         print("Initializing model for translation")
         # initialize the model
         self.translator = Translator(
-            f"{expdir}/final_bin", f"{expdir}/model/checkpoint_best.pt", batch_size=100
+            f"{expdir}/final_bin", f"{expdir}/model/checkpoint_best.pt", batch_size=50
         )
 
     # translate a batch of sentences from src_lang to tgt_lang
