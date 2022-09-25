@@ -2,7 +2,9 @@
 	<h1><b><i>IndicTrans</i></b></h1>
 	<a href="http://indicnlp.ai4bharat.org/samanantar">Website</a> |
 	<a href="https://arxiv.org/abs/2104.05596">Paper</a> |
-        <a href="https://youtu.be/QwYPOd1eBtQ?t=383">Video</a><br><br>
+  	<a href="https://youtu.be/QwYPOd1eBtQ?t=383">Video</a> |
+	<a href="https://github.com/AI4Bharat/indicTrans/tree/main/AI4B_Demo">Demo Resources</a>
+	<br><br>
 </div>
 
 **IndicTrans** is a Transformer-4x ( ~434M ) multilingual NMT model trained on [Samanantar](https://indicnlp.ai4bharat.org/samanantar) dataset which is the largest publicly available parallel corpora collection for Indic languages at the time of writing ( 14 April 2021 ). It is a single script model i.e we convert all the Indic data to the Devanagari script which allows for ***better lexical sharing between languages for transfer learning, prevents fragmentation of the subword vocabulary between Indic languages and allows using a smaller subword vocabulary***. We currently release two models - Indic to English and English to Indic and support the following 11 indic languages:
@@ -10,7 +12,7 @@
 | <!-- -->      | <!-- -->       | <!-- -->     | <!-- -->    |
 | ------------- | -------------- | ------------ | ----------- |
 | Assamese (as) | Hindi (hi)     | Marathi (mr) | Tamil (ta)  |
-| Bengali (bn)  | Kannada (kn)   | Oriya (or)   | Telugu (te) |
+| Bengali (bn)  | Kannada (kn)   | Odia (or)    | Telugu (te) |
 | Gujarati (gu) | Malayalam (ml) | Punjabi (pa) |
 
 
@@ -219,6 +221,7 @@ Tutorials updated with latest model links
 - [License](#license)
 - [Contributors](#contributors)
 - [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
 
 ## Resources
 
@@ -229,11 +232,11 @@ Tutorials updated with latest model links
 
 ### Download model
 
-Indic to English: [v0.3](https://storage.googleapis.com/samanantar-public/V0.3/models/indic-en.zip)
+Indic to English: [v0.3](https://ai4b-my.sharepoint.com/:u:/g/personal/sumanthdoddapaneni_ai4bharat_org/ETnq-z4aHXFAjDF1Te3AZ20BaZ59PwlKlzSemEHhrmYJ3w?e=fg3s9y&download=1)
 
-English to Indic: [v0.3](https://storage.googleapis.com/samanantar-public/V0.3/models/en-indic.zip)
+English to Indic: [v0.3](https://ai4b-my.sharepoint.com/:u:/g/personal/sumanthdoddapaneni_ai4bharat_org/EUOJ3irrwzFGnEnlPWHgaYkBugAQz25bPFgRvCPW8k7qtg?e=vvCP3u&download=1)
 
-Indic to Indic:   [v0.3](https://storage.googleapis.com/samanantar-public/V0.3/models/m2m.zip)
+Indic to Indic:   [v0.3](https://ai4b-my.sharepoint.com/:u:/g/personal/sumanthdoddapaneni_ai4bharat_org/Eajn_jJIp5NEqeyqZ0GW4FgBdiANlZNQiy7dlwkaNr8DHw?e=1dLIGB&download=1)
 
 [Mirror links](https://indicnlp.ai4bharat.org/indic-trans/#mirror-links) for the IndicTrans models
 
@@ -241,11 +244,11 @@ Indic to Indic:   [v0.3](https://storage.googleapis.com/samanantar-public/V0.3/m
 
 <details><summary>Click to expand </summary>
 
-Please visit [API documentation](http://216.48.182.174:5050/docs#) to read more about the available API endpoints/methods you can use.
+Please visit [API documentation](http://216.48.181.177:5050/docs#) to read more about the available API endpoints/methods you can use.
 
 #### Sample screenshot of translate_sentence POST request
 
-Go to [API documentation](http://216.48.182.174:5050/docs#), scroll to translate_sentence POST request endpoint and click "Try it out" button.
+Go to [API documentation](http://216.48.181.177:5050/docs#), scroll to translate_sentence POST request endpoint and click "Try it out" button.
 
 <br>
 
@@ -273,7 +276,7 @@ Check the translation result in response:
 
 <br>
 
-Visit the [API documentation](http://216.48.182.174:5050/docs#)to check other supported methods:
+Visit the [API documentation](http://216.48.181.177:5050/docs#)to check other supported methods:
 
 <p align="left">
 <img src="./sample_images/api_methods.png" width=50% height=50% />
@@ -814,6 +817,7 @@ The IndicTrans code (and models) are released under the MIT License.
 - Divyanshu Kakwani, <sub>([IITM](https://www.iitm.ac.in), [AI4Bharat](https://ai4bharat.org))</sub>
 - Navneet Kumar, <sub>([Tarento](https://www.linkedin.com/company/tarento-group/), [EkStep](https://ekstep.in))</sub>
 - Aswin Pradeep, <sub>([Tarento](https://www.linkedin.com/company/tarento-group/), [EkStep](https://ekstep.in))</sub>
+- Srihari, Nagaraj, <sub>([Tarento](https://www.linkedin.com/company/tarento-group/), [EkStep](https://ekstep.in))</sub>
 - Kumar Deepak, <sub>([Tarento](https://www.linkedin.com/company/tarento-group/), [EkStep](https://ekstep.in))</sub>
 - Vivek Raghavan, <sub>([EkStep](https://ekstep.in))</sub>
 - Anoop Kunchukuttan, <sub>([Microsoft](https://www.microsoft.com/en-in/), [AI4Bharat](https://ai4bharat.org))</sub>
@@ -827,3 +831,8 @@ The IndicTrans code (and models) are released under the MIT License.
 - Anoop Kunchukuttan ([anoop.kunchukuttan@gmail.com](mailto:anoop.kunchukuttan@gmail.com))
 - Mitesh Khapra ([miteshk@cse.iitm.ac.in](mailto:miteshk@cse.iitm.ac.in))
 - Pratyush Kumar ([pratyush@cse.iitm.ac.in](mailto:pratyush@cse.iitm.ac.in))
+
+
+## Acknowledgements
+
+We would like to thank EkStep Foundation for their generous grant which helped in setting up the Centre for AI4Bharat at IIT Madras to support our students, research staff, data and computational requirements. We would like to thank The Ministry of Electronics and Information Technology (NLTM) for its grant to support the creation of datasets and models for Indian languages under its ambitions Bhashini project. We would also like to thank the Centre for Development of Advanced Computing, India (C-DAC) for providing access to the Param Siddhi supercomputer for training our models. Lastly, we would like to thank Microsoft for its grant to create datasets, tools and resources for Indian languages.
